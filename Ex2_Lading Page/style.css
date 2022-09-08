@@ -1,0 +1,197 @@
+
+.site-navbar-wrap {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    left: 0;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none ;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+.navigation-manual{
+   position: absolute;
+   width: 800px;
+   margin-top: -40px;
+   display: flex;
+   justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC ;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+}
+
+.navbar li a:hover{
+     color: blue !important;
+}
+
+body {
+    line-height: 1.7;
+    color: gray;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    background-image: url(https://preview.colorlib.com/theme/booke/images/xpolygon.png.pagespeed.ic.nHRdkw8Vdv.webp);
+    background-position: -500px -1585px;
+    background-repeat: no-repeat;
+}
+.service {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-top: 2px solid #1c63fb;
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+    position: relative;
+    top: 0;
+}
+
+.service .wrap-icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border: 1px solid #1c63fb;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.service .wrap-icon>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: #1c63fb;
+}
+
+.btn.btn-white {
+    background: #fff;
+    border: 2px solid transparent;
+}
+
+.btn.btn-white {
+    border-width: 2px;
+    border-radius: 30px;
+}
+.btn.btn-white:hover{
+    background-color: #1c63fb;
+}
+
+.testimonial {
+    padding: 30px;
+    color: #000;
+    -webkit-box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%);
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.h-100 {
+    height: 100%!important;
+}
+.bg-white {
+    background-color: #fff!important;
+}
+.testimonial .vcard figure img {
+    border-radius: 50%;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
